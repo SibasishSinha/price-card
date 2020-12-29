@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    color: aliceblue;
+    position: relative;
+}
+.card{
+    position: absolute;   
+    transform: translate(90%, 40%);
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "top top" "left right";
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgb(202, 201, 201);
+}
+.top, .left, .right {
+    border: none;
+    text-align: left;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.top
+{
+    background: aliceblue;
+    grid-area: top;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -100px;
+}
+.top h2 {
+    font-size: 30px;
+    position: relative;
+    top: -100px;
+} 
+.top h3
+{
+    font-size: 24px;
+    position: relative;
+    top: -50px;
+}
+.left
+{
+    background: hsl(179, 61%, 50%);
+    grid-area: left;
+    border-radius: 0 0 0 10px;
+}
+.left button {
+    margin-top: 20px;
+    color: aliceblue;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: hsl(71, 73%, 54%);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+}
+.right
+{
+    background: hsl(179, 73%, 55%);
+    line-height: 1.5rem;
+    grid-area: right;
+    border-radius: 0 0 10px 0;
+}
+.right li
+{
+    list-style: none;
+    opacity: 70%;
+}
